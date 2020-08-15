@@ -12,4 +12,4 @@ for i in profiles:
         except IndexError:
             print("{:<30}|  {:<}".format(i, ""))
     except subprocess.CalledProcessError:
-        print()
+        print("{:<30}|  {:<}".format(i,"ENCODING ERROR"))
