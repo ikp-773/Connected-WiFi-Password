@@ -7,7 +7,6 @@ for i in profiles:
                         'key=clear']).decode('utf-8').split('\n')
     results = [b.split(":")[1][1:-1] for b in results if "Key Content" in b]
     # printing the profiles(wifi name) with their passwords using
-    # try and except method
     try:
         print ("{:<30}|  {:<}".format(i, results[0]))
     except IndexError:
